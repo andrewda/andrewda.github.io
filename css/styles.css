@@ -55,8 +55,20 @@ html, body {
     width: 100%;
     margin: 0;
 
+    background-color: #bdc3c7;
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
 }
 
 a {
@@ -229,7 +241,7 @@ a {
 }
 
 .colored {
-    color: #2dc83a;
+    color: #3498db;
 }
 
 .small {
@@ -262,7 +274,7 @@ a {
 
 .sliding-middle-out:hover:after {
     width: 100%;
-    background: #2dc83a;
+    background: #3498db;
 }
 
 .arrow-down {
@@ -274,10 +286,24 @@ a {
     border-color: #333333 transparent transparent transparent;
 }
 
-#particles-js {
+#section-1 {
     top: 0;
 
     position: absolute;
+
     height: 100vh;
     width: 100%;
+
+    background-color: #34495e;
 }
+
+/*#section-2 {
+    top: -153px;
+
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: #2ecc71;
+}*/
