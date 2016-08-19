@@ -94,8 +94,6 @@ a {
     align-content: center;
     align-items: center;
     justify-content: center;
-
-    margin: 20px;
 }
 
 .work-list {
@@ -277,6 +275,8 @@ a {
 }
 
 #particles-js {
+    top: 0;
+
     position: absolute;
     height: 100vh;
     width: 100%;
