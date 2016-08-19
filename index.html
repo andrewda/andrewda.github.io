@@ -7,9 +7,16 @@
 
         <meta name="keywords" content="Andrew,andrewda,JavaScript,Node.js,HTML">
         <meta name="author" content="Andrew Dassonville">
-        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
         <meta name="title" content="Andrew Dassonville | andrewda">
         <meta name="description" content="I am a web developer from Oregon using JavaScript, Node.js, Java, and Python.">
+
+        <script>
+            if (screen && screen.width < 480) {
+                document.write('\<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=0.4,maximum-scale=0.4,initial-scale=0.4" /\>');
+            } else {
+                document.write('\<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1,user-scalable=no" /\>');
+            }
+        </script>
 
         <link rel="stylesheet" href="./css/animate.min.css">
         <link rel="stylesheet" href="./css/styles.css">
@@ -199,7 +206,7 @@
         </div>
         <div class="hint" style="opacity: 4.2;">
             <span class="hint-text">
-                Wanna know more?
+                Want to contact me?
             </span>
             <div class="arrow-down"></div>
         </div>
