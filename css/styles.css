@@ -1,7 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Merriweather+Sans:700,600,400|Open+Sans:400';
 
 body, body * {
-    max-height: 1000000px;
     transform: translate3d(0, 0, 0);
 }
 
@@ -88,7 +87,7 @@ a {
 }
 
 .section {
-    width: calc(100% - 40px);
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -166,6 +165,8 @@ a {
     -moz-perspective: 1000;
     -o-perspective: 1000;
     perspective: 1000;
+
+    margin-right: 15px;
 }
 
 .flip-container:hover .flipper,
@@ -218,7 +219,7 @@ a {
 }
 
 .text-container {
-    margin-left: 10px;
+    /*margin-left: 10px;*/
 }
 
 .light {
@@ -276,7 +277,7 @@ a {
 }
 
 #particles-js {
-    position: fixed;
+    position: absolute;
     height: 100vh;
     width: 100%;
 }
