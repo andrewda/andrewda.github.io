@@ -61,7 +61,7 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-html {
+/*html {
     overflow: hidden;
     height: 100%;
 }
@@ -69,7 +69,7 @@ html {
 body {
     height: 100%;
     overflow: auto;
-}
+}*/
 
 a {
     text-decoration: none;
@@ -92,6 +92,10 @@ a {
     align-items: center;
 
     margin-bottom: 25vh;
+}
+
+.work-hint {
+    margin-top: 100px;
 }
 
 .full-height {
@@ -135,17 +139,27 @@ a {
 .social-icons {
     display: flex;
     flex-direction: row;
+
+    margin-top: 15px;
 }
 
 .social-icon {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     transition: .5s;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    -webkit-filter: invert(50%);
 }
 
 .social-icon:hover {
-    filter: blur(20px);
-    -webkit-filter: invert(100%);
+    -webkit-filter: invert(1%);
+}
+
+.social-icon:hover path {
+    fill: red;
 }
 
 .work-dates {
