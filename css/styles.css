@@ -61,16 +61,6 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/*html {
-    overflow: hidden;
-    height: 100%;
-}
-
-body {
-    height: 100%;
-    overflow: auto;
-}*/
-
 a {
     text-decoration: none;
     color: black;
@@ -91,11 +81,11 @@ a {
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 25vh;
+    margin-bottom: 15vh;
 }
 
-.work-hint {
-    margin-top: 100px;
+.hint:first-of-type {
+    top: 99vh;
 }
 
 .full-height {
@@ -112,6 +102,10 @@ a {
     justify-content: center;
 }
 
+.section:not(:first-child) {
+    margin-bottom: 10vh;
+}
+
 .work-list {
     margin: 50px !important;
     width: 100%;
@@ -124,6 +118,17 @@ a {
     width: 100%;
 }
 
+.work-dates {
+    width: 30%;
+    display: block;
+    text-align: end;
+    margin-right: 20px;
+}
+
+.work-body {
+    width: 70%;
+}
+
 .project-list {
     margin: 50px !important;
     width: 100%;
@@ -131,9 +136,37 @@ a {
 }
 
 .project-table {
-    display: flex;
-    flex-direction: row;
     width: 100%;
+}
+
+.project-name {
+
+}
+
+.project-body {
+    padding-left: 20px;
+}
+
+.skill-category:first-of-type {
+    margin-top: 50px;
+}
+
+.skill-list {
+    margin: 50px !important;
+    width: 100%;
+    max-width: 800px;
+}
+
+.skill-table {
+    width: 100%;
+}
+
+.skill-name {
+
+}
+
+.skill-body {
+    padding-left: 20px;
 }
 
 .social-icons {
@@ -156,32 +189,6 @@ a {
 
 .social-icon:hover {
     -webkit-filter: invert(1%);
-}
-
-.social-icon:hover path {
-    fill: red;
-}
-
-.work-dates {
-    width: 30%;
-    display: block;
-    text-align: end;
-    margin-right: 20px;
-}
-
-.work-items {
-    width: 70%;
-}
-
-.project-name {
-    width: 30%;
-    display: block;
-    text-align: end;
-    margin-right: 20px;
-}
-
-.project-items {
-    width: 70%;
 }
 
 .flip-container {
@@ -242,10 +249,6 @@ a {
     transform: rotateY(180deg);
 }
 
-.text-container {
-    /*margin-left: 10px;*/
-}
-
 .light {
     font-weight: 300;
 }
@@ -268,6 +271,8 @@ a {
 
 .about-me-text {
     max-width: 600px;
+
+    margin-bottom: 20px;
 }
 
 .sliding-middle-out {
@@ -300,7 +305,7 @@ a {
     border-color: #333333 transparent transparent transparent;
 }
 
-#section-1 {
+.particlejs {
     top: 0;
 
     position: absolute;
@@ -310,14 +315,3 @@ a {
 
     background-color: #34495e;
 }
-
-/*#section-2 {
-    top: -153px;
-
-    position: absolute;
-
-    height: 100%;
-    width: 100%;
-
-    background-color: #2ecc71;
-}*/

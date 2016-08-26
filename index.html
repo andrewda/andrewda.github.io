@@ -19,7 +19,7 @@
     </head>
     <body>
         <div class="section full-height">
-            <div id="section-1"></div>
+            <div id="pjs" class="particlejs"></div>
             <div class="container animated fadeInUp row">
                 <div class="flip-container">
                     <div class="flip-container" ontouchstart="this.classList.toggle(&#39;hover&#39;);">
@@ -59,14 +59,13 @@
                 </div>
             </div>
         </div>
-        <div class="hint" style="opacity: 1.2;">
+        <div class="hint">
             <span class="hint-text">
-                Scroll down to see more
+                Scroll down to see more!
             </span>
             <div class="arrow-down"></div>
         </div>
-        <div class="section full-height">
-            <div id="section-2"></div>
+        <div id="about" class="section">
             <h1>About Me</h1>
             <p>
                 I'm <span id="age-counter">15</span> years old.
@@ -84,26 +83,20 @@
                 PHP. I also learned a lot about server administration from my time using PHP.
             </p>
             <p class="about-me-text">
-                After getting fed up with PHP (I disliked, and still dislike, scripting-based languages like PHP), I moved on
-                and started using Node.js, Django Python and Ruby on Rails. Node.js has been my go-to language ever since my
-                switch in early 2015. Honestly, it can be used for everything - from websites using Express to standalone
-                applications using Electron.
+                After getting fed up with PHP and all its weird/annoying "features", I moved on and started using Node.js,
+                Django Python, and Ruby on Rails. Node.js has been my go-to language ever since my switch in early 2015.
+                Honestly, it can be used for just about everything - from websites using Express to standalone applications
+                using Electron.
             </p>
         </div>
-        <div class="hint work-hint" style="opacity: 2.2;">
-            <span class="hint-text">
-                Check out my work
-            </span>
-            <div class="arrow-down"></div>
-        </div>
-        <div class="section">
+        <div id="work" class="section">
             <h1>My Work</h1>
             <div class="work-list">
                 <div class="work-table">
                     <div class="work-dates">
                         <span>MAY 2013 - Present</span>
                     </div>
-                    <div class="work-items">
+                    <div class="work-body">
                         <a href="https://github.com/andrewda" target="_blank" class="sliding-middle-out">
                             <span><b>Open Source Developer</b> - JavaScript, Node.js, Python</span>
                         </a>
@@ -120,7 +113,7 @@
                     <div class="work-dates">
                         <span>AUG 2015 - Present</span>
                     </div>
-                    <div class="work-items">
+                    <div class="work-body">
                         <a href="https://github.com/SouthEugeneRoboticsTeam" target="_blank" class="sliding-middle-out">
                             <span><b>South Eugene Robotics Team</b> - Java, JavaScript, Node.js</span>
                         </a>
@@ -133,22 +126,16 @@
                 </div>
             </div>
         </div>
-        <div class="hint" style="opacity: 3.2;">
-            <span class="hint-text">
-                Check out my projects
-            </span>
-            <div class="arrow-down"></div>
-        </div>
-        <div class="section">
+        <div id="projects" class="section">
             <h1>My Projects</h1>
             <div class="project-list">
                 <div class="project-table">
                     <div class="project-name">
                         <a href="https://github.com/andrewda/CSGOItemDB" target="_blank" class="sliding-middle-out">
-                            <span>CSGOItemDB</span>
+                            <span><b>CSGOItemDB</b></span>
                         </a>
                     </div>
-                    <div class="project-items">
+                    <div class="project-body">
                         <p>
                             CSGOItemDB is an open-source way for CS:GO website developers to easily be able to get the prices
                             of items. It was one of my first open-source projects and taught me a lot about using technologies
@@ -160,10 +147,10 @@
                 <div class="project-table">
                     <div class="project-name">
                         <a href="https://github.com/andrewda/hltv-livescore" target="_blank" class="sliding-middle-out">
-                            <span>hltv-livescore</span>
+                            <span><b>hltv-livescore</b></span>
                         </a>
                     </div>
-                    <div class="project-items">
+                    <div class="project-body">
                         <p>
                             hltv-livescore is most likely my largest project in terms of users and functionality.
                             It originated as a fork of Nils Margotti's amazing work with
@@ -178,10 +165,10 @@
                 <div class="project-table">
                     <div class="project-name">
                         <a href="https://github.com/andrewda/hltv-live-games" target="_blank" class="sliding-middle-out">
-                            <span>hltv-live-games</span>
+                            <span><b>hltv-live-games</b></span>
                         </a>
                     </div>
-                    <div class="project-items">
+                    <div class="project-body">
                         <p>
                             hltv-live-games is another one of my HLTV-related modules. This module will emit an event every
                             time a game goes live on HLTV and has a valid matchid. You can safely expect more things to come
@@ -192,10 +179,10 @@
                 <div class="project-table">
                     <div class="project-name">
                         <a href="https://github.com/andrewda/CSGOScoreBot" target="_blank" class="sliding-middle-out">
-                            <span>CSGOScoreBot</span>
+                            <span><b>CSGOScoreBot</b></span>
                         </a>
                     </div>
-                    <div class="project-items">
+                    <div class="project-body">
                         <p>
                             CSGOScoreBot is a bot which will automatically post live CS:GO scores and updates to a Reddit live
                             thread. It makes use of <a href="https://github.com/andrewda/hltv-livescore" target="_blank" class="colored">hltv-livescore</a>
@@ -207,10 +194,10 @@
                 <div class="project-table">
                     <div class="project-name">
                         <a href="https://sert2521.tk" target="_blank" class="sliding-middle-out">
-                            <span>SERT Website</span>
+                            <span><b>SERT Website</b></span>
                         </a>
                     </div>
-                    <div class="project-items">
+                    <div class="project-body">
                         <p>
                             Not only was this my first time using Jekyll to create a website, it also taught me a lot about
                             using Cloudflare (which I had already used for numerous other websites, including this one) and
@@ -225,11 +212,126 @@
                 To see more, checkout my <a href="https://github.com/andrewda" class="colored sliding-middle-out" target="_blank"><b>GitHub</b></a> profile!
             </p>
         </div>
-        <div class="hint" style="opacity: 4.2;">
-            <span class="hint-text">
-                Want to contact me?
+        <div id="skills" class="section">
+            <h1>My Skills</h1>
+            <span class="skill-category">
+                <h2>Web Development</h2>
             </span>
-            <div class="arrow-down"></div>
+            <div class="skill-list">
+                <div class="skill-table">
+                    <div class="skill-name">
+                        <span><b>Backend Development</b> - Node.js, Django, Ruby on Rails</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>
+                            I've used Node.js for most of my major projects, as mentioned above. Ever since starting to use
+                            it in early 2015, I've loved the language and have grown very familiar with many major modules,
+                            such as Express, Async, Lodash, Request, and more. Along with my Node.js knowledge, I also
+                            actively use Django Python and Ruby on Rails to create backend web applications.
+                        </p>
+                    </div>
+                </div>
+                <div class="skill-table">
+                    <div class="skill-name">
+                        <span><b>Frontend Development</b> - Angular.js, React, jQuery</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>
+                            Angular.js and React go hand-in-hand with Node.js, and therefore I've used them right alongside
+                            many of my Node.js websites. They provide simple two-way data binding between the frontend and
+                            the backend, which makes them ideal for any application where data binding is usefull.
+                        </p>
+                    </div>
+                </div>
+                <div class="skill-table">
+                    <div class="skill-name">
+                        <span><b>Jekyll</b> - Ruby on Rails, JavaScript</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>
+                            I've used Jekyll many times in the past to create blog-aware websites such as the new South
+                            Eugene Robotics Team website, which may be viewed by visiting
+                            <a href="http://southeugeneroboticsteam.github.io" class="colored">SouthEugeneRoboticsTeam.github.io</a>.
+                            I am also in the process of converting this site to use Jekyll, as well.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <span class="skill-category">
+                <h2>Server Management</h2>
+            </span>
+            <div class="skill-list">
+                <div class="skill-table">
+                    <div class="skill-name">
+                        <span><b>Linux, *nix</b></span>
+                    </div>
+                    <div class="skill-body">
+                        <p>
+                            Linux is an extraordinarily useful operating system when it comes to development. I've managed
+                            many Linux servers using the command-line interface and run many websites and applications on
+                            Linux VPS's.
+                        </p>
+                    </div>
+                </div>
+                <div class="skill-table">
+                    <div class="skill-name">
+                        <span><b>Load Balancing</b> - Nginx</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>
+                            I've used Nginx extensively for load-balancing applications and websites. Nginx makes load-
+                            balancing a breeze, and keeps servers running incredibly fast.
+                        </p>
+                    </div>
+                </div>
+                <div class="skill-table">
+                    <div class="skill-name">
+                        <span><b>Security, DNS Management</b> - Cloudflare</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>
+                            Security and DNS Management are both incredibly important for every website. Fortunately, tools
+                            such as Cloudflare allow easy management of both, and I've used them to protect many servers
+                            from DDoS attacks and nasty web-scraping bots.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <span class="skill-category">
+                <h2>Robotics</h2>
+            </span>
+            <div class="skill-list">
+                <div class="skill-table">
+                    <div class="skill-name">
+                        <span><b>Software</b> - Java</span>
+                    </div>
+                    <div class="skill-body">
+                        <p>
+                            Working on creating robot software with the South Eugene Robotics Team has helped me not only
+                            refine my Java skills, but also refine my productivity in a team environment. Working on robot
+                            software has been incredibly challenging at times, but simultaneously incredibly rewarding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <span class="skill-category">
+                <h2>Version Control</h2>
+            </span>
+            <div class="skill-list">
+                <div class="skill-table">
+                    <div class="skill-name">
+                        <span><b>Git, GitHub</b></span>
+                    </div>
+                    <div class="skill-body">
+                        <p>
+                            I've been using Git and GitHub for many years and, over that time, have learned the best practices
+                            and have developed many Git related skills to maximize the utility of version control. I started
+                            out by using GUI interfaces to interact with Git and GitHub, but have found overtime that the
+                            command-line interface provides much more utility and simplicity.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="section full-height">
             <h1>Contact Me</h1>

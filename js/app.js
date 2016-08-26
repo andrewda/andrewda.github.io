@@ -1,4 +1,3 @@
-var hints = $('.hint');
 var profilePicture = $('.picture-container')[0];
 var introText = $('.text-container')[0];
 var ageCounter = $('#age-counter');
@@ -16,10 +15,6 @@ setInterval(function () {
 $(document).on('scroll', function () {
     // Do not change opacity on mobile devices - it will cause elements to disappear too early
     if (!isMobile) {
-        $.each(hints, function(i, hint) {
-            hint.style.opacity = 1 - $(document).scrollTop() / 1000 + 0.2 + i;
-        });
-
         profilePicture.style.opacity = 1 - $(document).scrollTop() / 300 + 0.5;
         introText.style.opacity = 1 - $(document).scrollTop() / 300 + 0.5;
     }
@@ -31,4 +26,4 @@ function calcAge(dateString) {
     ageCounter.text(((Date.now() - b) / (31557600000)).toFixed(8));
 }
 
-particlesJS('section-1', particleSettings);
+particlesJS('pjs', particleSettings);
