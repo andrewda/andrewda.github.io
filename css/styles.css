@@ -312,6 +312,28 @@ a {
 
     height: 100vh;
     width: 100%;
+}
 
-    background-color: #34495e;
+body:before {
+    content: "";
+
+    position: fixed;
+
+    height: calc(100vh + 22px);
+    width: calc(100% + 30px);
+
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    z-index: -1;
+
+    display: block;
+    background-image: url(../img/background.jpg);
+    background-position: center;
+
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
 }
