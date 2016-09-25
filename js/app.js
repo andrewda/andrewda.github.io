@@ -12,14 +12,6 @@ setInterval(function () {
     calcAge(birthday);
 }, 250);
 
-$(document).on('scroll', function () {
-    // Do not change opacity on mobile devices - it will cause elements to disappear too early
-    if (!isMobile) {
-        profilePicture.style.opacity = 1 - $(document).scrollTop() / 300 + 0.5;
-        introText.style.opacity = 1 - $(document).scrollTop() / 300 + 0.5;
-    }
-});
-
 calcAge(birthday);
 function calcAge(dateString) {
     var b = new Date(dateString);
