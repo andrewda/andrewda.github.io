@@ -10,12 +10,12 @@ var birthday = '2001-01-30';
 
 setInterval(function () {
     calcAge(birthday);
-}, 250);
+}, 2000);
 
 calcAge(birthday);
 function calcAge(dateString) {
     var b = new Date(dateString);
-    ageCounter.text(((Date.now() - b) / (31557600000)).toFixed(8));
+    ageCounter.text(((Date.now() - b) / (31557600000)).toFixed(7));
 }
 
 particlesJS('pjs', particleSettings);
