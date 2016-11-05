@@ -179,14 +179,14 @@ a {
 }
 
 .social-icon {
-    width: 48px;
-    height: 48px;
     transition: .5s;
 
     margin-left: 10px;
     margin-right: 10px;
 
-    -webkit-filter: invert(50%);
+    font-size: 1.75em;
+
+    -webkit-filter: invert(30%);
 }
 
 .social-icon:hover {
