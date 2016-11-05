@@ -77,11 +77,10 @@ a {
 
 .hint {
     display: flex;
+    height: 10vh;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
-    margin-bottom: 15vh;
 }
 
 .hint:first-of-type {
@@ -95,6 +94,8 @@ a {
 .section {
     width: 100%;
 
+    z-index: 1;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -103,7 +104,8 @@ a {
 }
 
 .section:not(:first-child) {
-    margin-bottom: 10vh;
+    padding-top: 125px;
+    background-color: #f3f3f3;
 }
 
 .work-list {
@@ -319,7 +321,7 @@ body:before {
 
     position: fixed;
 
-    height: calc(100vh + 22px);
+    height: calc(100vh + 30px);
     width: calc(100% + 30px);
 
     top: -15px;
@@ -329,7 +331,8 @@ body:before {
 
     display: block;
     background-image: url(../img/background.jpg);
-    background-position: center;
+    background-position: top;
+    background-size: cover;
 
     filter: blur(3px);
     -webkit-filter: blur(3px);
