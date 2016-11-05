@@ -71,11 +71,16 @@ a {
     flex-direction: column;
 }
 
+.text-container {
+    color: #ffffff;
+}
+
 .row {
     flex-direction: row;
 }
 
 .hint {
+    color: #ffffff;
     display: flex;
     height: 10vh;
     justify-content: center;
@@ -324,19 +329,19 @@ body:before {
     height: calc(100vh + 30px);
     width: calc(100% + 30px);
 
-    top: -15px;
-    left: -15px;
-    right: -15px;
+    top: -20px;
+    left: -20px;
+    right: -20px;
     z-index: -1;
 
     display: block;
     background-image: url(../img/background.jpg);
-    background-position: top;
+    background-position: center;
     background-size: cover;
 
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
 }
