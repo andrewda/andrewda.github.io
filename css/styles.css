@@ -93,7 +93,7 @@ a {
 }
 
 .full-height {
-    height: 90vh;
+    height: 100vh;
 }
 
 .section {
@@ -108,9 +108,17 @@ a {
     justify-content: center;
 }
 
+.section:first-child {
+    height: 90vh;
+}
+
 .section:not(:first-child) {
     padding-top: 125px;
     background-color: #f3f3f3;
+}
+
+#contact {
+    padding-top: 0;
 }
 
 .work-list {
@@ -337,7 +345,7 @@ body:before {
     display: block;
     background-image: url(../img/background.jpg);
     background-position: center;
-    background-size: cover;
+    background-attachment: fixed;
 
     filter: blur(4px);
     -webkit-filter: blur(4px);
