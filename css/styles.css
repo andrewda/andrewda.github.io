@@ -55,6 +55,8 @@ html, body {
     width: 100%;
     margin: 0;
 
+    overflow-x: hidden;
+
     background-color: #ffffff;
 
     -webkit-font-smoothing: antialiased;
@@ -349,4 +351,6 @@ body:before {
     -moz-filter: blur(4px);
     -o-filter: blur(4px);
     -ms-filter: blur(4px);
+
+    transform: scalex(1.1);
 }
