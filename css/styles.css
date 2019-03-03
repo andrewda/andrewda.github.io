@@ -346,11 +346,11 @@ body:before {
     background-position: center;
     background-attachment: fixed;
 
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -o-filter: blur(4px);
-    -ms-filter: blur(4px);
+//     filter: blur(4px);
+//    -webkit-filter: blur(4px);
+//    -moz-filter: blur(4px);
+//    -o-filter: blur(4px);
+//    -ms-filter: blur(4px);
 
     transform: scalex(1.1);
 }
