@@ -345,6 +345,7 @@ body:before {
     background-image: url(../img/background.jpg);
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
 
 //     filter: blur(4px);
 //    -webkit-filter: blur(4px);
