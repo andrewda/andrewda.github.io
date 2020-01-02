@@ -1,20 +1,16 @@
 <template>
-  <div class="container animated fadeIn">
+  <div :class="`container ${animatingContainer && 'animated fadeIn'}`">
     <div class="content">
-      <h1 class="title animated fadeInDown">
+      <h1 :class="`title ${animatingTitle && 'animated fadeInDown'}`">
         Hello, I'm <span class="name">Andrew</span>
       </h1>
-      <h2 class="subtitle animated fadeIn">
-        Software Engineer 💻 in Corvallis, OR 🏞
+      <h2 :class="`subtitle ${animatingSubtitle && 'animated fadeIn'}`">
+        A Software Engineer 💻 in Corvallis, OR 🏞
       </h2>
-      <div class="links animated fadeIn">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
+      <div :class="`links ${animatingLinks && 'animated fadeIn'}`">
+        <nuxt-link to="/experience" class="button--green">
           Experience
-        </a>
+        </nuxt-link>
         <a
           href="https://github.com/andrewda"
           target="_blank"
@@ -27,14 +23,29 @@
   </div>
 </template>
 
-<style>
-html {
-  background-color: black;
+<script>
+export default {
+  data() {
+    return {
+      animatingContainer: true,
+      animatingTitle: true,
+      animatingSubtitle: true,
+      animatingLinks: true,
+    }
+  },
+  mounted() {
+    setTimeout(() => this.animatingContainer = false, 1000)
+    setTimeout(() => this.animatingTitle = false, 1500)
+    setTimeout(() => this.animatingSubtitle = false, 2500)
+    setTimeout(() => this.animatingLinks = false, 3500)
+  }
 }
+</script>
 
+<style scoped>
 .container {
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 200px,rgb(0, 0, 0, 1) 650px), url('~assets/single_bw.png');
+  background-image: linear-gradient(to right, rgba(12, 12, 12, 0) 200px,rgb(12, 12, 12, 1) 650px), url('~assets/single_bw.png');
   background-size: contain;
   background-position: 0 0;
   margin: 0 auto;
@@ -52,30 +63,8 @@ html {
   right: 0;
 }
 
-.title {
-  font-family: 'Montserrat', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 70px;
-  color: #526488;
-  letter-spacing: 1px;
-  animation-delay: 0.5s;
-}
-
 .name {
   color: #3b8070;
-}
-
-.subtitle {
-  font-family: 'Montserrat', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 300;
-  font-size: 35px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-  animation-delay: 1.5s;
 }
 
 .links {
