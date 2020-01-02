@@ -1,7 +1,7 @@
 {
   "name": "andrewda.github.io",
   "version": "1.0.0",
-  "description": "My prime Nuxt.js project",
+  "description": "Personal website",
   "author": "Andrew Dassonville",
   "private": true,
   "scripts": {
