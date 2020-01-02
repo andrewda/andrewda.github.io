@@ -26,6 +26,22 @@
           <span class="subtitle box">Twenty Ideas</span>
         </div>
       </div>
+
+      <div class="job">
+        <div class="job-title">
+          <span class="subtitle box">Machine Learning Intern</span>
+          <span class="subtitle box at">@</span>
+          <span class="subtitle box">Oregon State University</span>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-title">
+          <span class="subtitle box">Software Lead</span>
+          <span class="subtitle box at">@</span>
+          <span class="subtitle box">South Eugene Robotics Team</span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
