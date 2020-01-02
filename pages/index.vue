@@ -7,7 +7,7 @@
       <h2 :class="`subtitle ${animatingSubtitle && 'animated fadeIn'}`">
         A Software Engineer 💻 in Corvallis, OR 🏞
       </h2>
-      <div :class="`links ${animatingLinks && 'animated fadeIn'}`">
+      <!-- <div :class="`links ${animatingLinks && 'animated fadeIn'}`">
         <nuxt-link to="/experience" class="button--green">
           Experience
         </nuxt-link>
@@ -18,7 +18,7 @@
         >
           GitHub
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

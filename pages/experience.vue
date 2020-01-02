@@ -54,6 +54,7 @@ export default {
 <style scoped>
 .container {
   margin: 0 auto;
+  padding-top: 50px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -95,12 +96,5 @@ export default {
 .at {
   flex: 0 auto;
   padding: 0 20px;
-}
-
-.card {
-  background-color: #484848;
-  height: 90vh;
-  width: 60%;
-  border-radius: 20px;
 }
 </style>

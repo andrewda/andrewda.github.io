@@ -1,8 +1,47 @@
 <template>
   <div>
+    <div class="menu animated fadeIn">
+      <nuxt-link to="/">Home</nuxt-link>
+      <nuxt-link to="/experience">Experience</nuxt-link>
+      <nuxt-link to="/projects">Projects</nuxt-link>
+      <nuxt-link to="/contact">Contact</nuxt-link>
+    </div>
     <nuxt />
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    console.log(this.$nuxt.$route.name)
+  }
+}
+</script>
+
+<style scoped>
+.menu {
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  animation-duration: .5s;
+}
+
+.menu > * {
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #526488;
+  border: solid transparent 1px;
+  border-radius: 5px;
+}
+
+.nuxt-link-exact-active {
+  border: solid whitesmoke 1px;
+}
+</style>
 
 <style>
 html {
