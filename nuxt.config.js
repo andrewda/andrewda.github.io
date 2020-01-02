@@ -24,8 +24,8 @@ export default {
   ** Global CSS
   */
   css: [
-    '@/static/css/main.css',
-    '@/static/css/animate.css'
+    '~assets/global.less',
+    '~assets/vendor/animate.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -41,7 +41,11 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    less: './assets/vars/*.less'
+  },
   /*
   ** Build configuration
   */

@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
 .menu {
   position: absolute;
   z-index: 100;
@@ -33,17 +33,17 @@ export default {
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
-  color: #526488;
+  color: @green;
   border: solid transparent 1px;
   border-radius: 5px;
 }
 
 .nuxt-link-exact-active {
-  border: solid whitesmoke 1px;
+  border: solid @white 1px;
 }
 </style>
 
-<style>
+<style lang="less">
 html {
   font-family: 'Montserrat', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -53,8 +53,8 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: rgb(12, 12, 12);
-  color: #dff9fb;
+  background-color: @black;
+  color: @white;
   box-sizing: border-box;
 }
 
@@ -68,30 +68,30 @@ html {
 .button--green {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border: 1px solid @green;
+  color: @green;
   text-decoration: none;
   padding: 10px 30px;
 }
 
 .button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+  color: @white;
+  background-color: @green;
 }
 
 .button--grey {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+  border: 1px solid @grey;
+  color: @grey;
   text-decoration: none;
   padding: 10px 30px;
   margin-left: 15px;
 }
 
 .button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+  color: @white;
+  background-color: @grey;
 }
 
 .title {
@@ -100,7 +100,7 @@ html {
   display: block;
   font-weight: 300;
   font-size: 70px;
-  color: #526488;
+  color: @bluegrey;
   letter-spacing: 1px;
   animation-delay: 0.5s;
 }
@@ -110,7 +110,7 @@ html {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 300;
   font-size: 35px;
-  color: #526488;
+  color: @bluegrey;
   word-spacing: 5px;
   padding-bottom: 15px;
   animation-delay: 1.5s;

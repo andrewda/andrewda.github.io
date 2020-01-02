@@ -7,7 +7,7 @@
       <h2 :class="`subtitle ${animatingSubtitle && 'animated fadeIn'}`">
         A Software Engineer 💻 in Corvallis, OR 🏞
       </h2>
-      <!-- <div :class="`links ${animatingLinks && 'animated fadeIn'}`">
+      <div :class="`links ${animatingLinks && 'animated fadeIn'}`">
         <nuxt-link to="/experience" class="button--green">
           Experience
         </nuxt-link>
@@ -18,7 +18,7 @@
         >
           GitHub
         </a>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -42,10 +42,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
 .container {
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(12, 12, 12, 0) 200px,rgb(12, 12, 12, 1) 650px), url('~assets/single_bw.png');
+  background-image: linear-gradient(to right, @black-transparent 200px, @black 650px), url('~assets/single_bw.png');
   background-size: contain;
   background-position: 0 0;
   margin: 0 auto;
@@ -64,7 +64,7 @@ export default {
 }
 
 .name {
-  color: #3b8070;
+  color: @green;
 }
 
 .links {
@@ -74,7 +74,7 @@ export default {
 
 @media only screen and (max-width: 1140px) {
   .container {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0, 0.9) 100%), url('~assets/single_bw.png');
+    background-image: linear-gradient(to bottom, @black 0%, @black-transparent 30%, @black 100%), url('~assets/single_bw.png');
     background-size: cover;
     align-items: flex-end;
   }
