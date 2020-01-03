@@ -46,8 +46,8 @@ export default {
 .container {
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, @black-transparent 200px, @black 650px), url('~assets/single_bw.png');
-  background-size: auto;
-  background-position: center center, -150px -100px;
+  background-size: auto, 850px;
+  background-position: center center, -150px 0;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -64,9 +64,8 @@ export default {
   @media @mobile {
     background-position: center center, 40% 0;
   }
-  @media only screen and (min-height: 1500px - 150px) {
+  @media only screen and (min-height: 1500px - 250px) {
     background-image: linear-gradient(to right, @black-transparent 200px, @black 650px), url('~assets/single_bw.png');
-    background-position: center center, -150px 0;
     background-size: contain;
   }
 }
