@@ -46,21 +46,41 @@ export default {
 .container {
   background-repeat: no-repeat;
   background-image: linear-gradient(to right, @black-transparent 200px, @black 650px), url('~assets/single_bw.png');
-  background-size: contain;
-  background-position: 0 0;
+  background-size: auto;
+  background-position: center center, -150px -100px;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  @media @tablet {
+    background-image: linear-gradient(to bottom, @black 0%, @black-transparent 30%, @black 100%), url('~assets/single_bw.png');
+    background-size: cover;
+    background-position: center center, 0 0;
+    align-items: flex-end;
+  }
+  @media @mobile {
+    background-position: center center, 40% 0;
+  }
+  @media only screen and (min-height: 1500px - 150px) {
+    background-image: linear-gradient(to right, @black-transparent 200px, @black 650px), url('~assets/single_bw.png');
+    background-position: center center, -150px 0;
+    background-size: contain;
+  }
 }
 
 .content {
-  width: calc(100% - 620px);
+  width: calc(100% - 630px);
   position: absolute;
   padding: 20px;
   right: 0;
+
+  @media @tablet {
+    width: 100%;
+    padding-bottom: 95px;
+  }
 }
 
 .name {
@@ -70,26 +90,5 @@ export default {
 .links {
   padding-top: 15px;
   animation-delay: 2.5s;
-}
-
-@media only screen and (max-width: 1140px) {
-  .container {
-    background-image: linear-gradient(to bottom, @black 0%, @black-transparent 30%, @black 100%), url('~assets/single_bw.png');
-    background-size: cover;
-    align-items: flex-end;
-  }
-
-  .content {
-    width: 100%;
-    padding-bottom: 95px;
-  }
-
-  .title {
-    font-size: 40px;
-  }
-
-  .subtitle {
-    font-size: 25px;
-  }
 }
 </style>

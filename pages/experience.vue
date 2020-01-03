@@ -5,41 +5,41 @@
 
       <div class="job">
         <div class="job-title">
-          <span class="subtitle box">Systems Engineer</span>
-          <span class="subtitle box at">@</span>
-          <span class="subtitle box">OSU Open Source Lab</span>
+          <span class="box">Systems Engineer</span>
+          <span class="box at">@</span>
+          <span class="box">OSU Open Source Lab</span>
         </div>
       </div>
 
       <div class="job">
         <div class="job-title">
-          <span class="subtitle box">Software Engineering Intern</span>
-          <span class="subtitle box at">@</span>
-          <span class="subtitle box">NASA Jet Propulsion Laboratory</span>
+          <span class="box">Software Engineering Intern</span>
+          <span class="box at">@</span>
+          <span class="box">NASA Jet Propulsion Laboratory</span>
         </div>
       </div>
 
       <div class="job">
         <div class="job-title">
-          <span class="subtitle box">Software Developer</span>
-          <span class="subtitle box at">@</span>
-          <span class="subtitle box">Twenty Ideas</span>
+          <span class="box">Software Developer</span>
+          <span class="box at">@</span>
+          <span class="box">Twenty Ideas</span>
         </div>
       </div>
 
       <div class="job">
         <div class="job-title">
-          <span class="subtitle box">Machine Learning Intern</span>
-          <span class="subtitle box at">@</span>
-          <span class="subtitle box">Oregon State University</span>
+          <span class="box">Machine Learning Intern</span>
+          <span class="box at">@</span>
+          <span class="box">Oregon State University</span>
         </div>
       </div>
 
       <div class="job">
         <div class="job-title">
-          <span class="subtitle box">Software Lead</span>
-          <span class="subtitle box at">@</span>
-          <span class="subtitle box">South Eugene Robotics Team</span>
+          <span class="box">Software Lead</span>
+          <span class="box at">@</span>
+          <span class="box">South Eugene Robotics Team</span>
         </div>
       </div>
     </div>
