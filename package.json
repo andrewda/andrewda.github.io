@@ -14,7 +14,8 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vue2-touch-events": "^2.1.0"
   },
   "devDependencies": {
     "eslint-config-prettier": "^4.1.0",
