@@ -42,8 +42,13 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/google-gtag',
     '@nuxtjs/style-resources'
   ],
+  'google-gtag': {
+    id: 'G-K4X2SEH2F3',
+    debug: true
+  },
   styleResources: {
     less: './assets/vars/*.less'
   },
