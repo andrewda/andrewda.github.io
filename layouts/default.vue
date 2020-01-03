@@ -1,19 +1,37 @@
 <template>
-  <div>
+  <div v-touch:swipe="swipeHandler">
     <div class="menu animated fadeIn">
-      <nuxt-link to="/">Home</nuxt-link>
-      <nuxt-link to="/experience">Experience</nuxt-link>
-      <nuxt-link to="/projects">Projects</nuxt-link>
-      <nuxt-link to="/contact">Contact</nuxt-link>
+      <nuxt-link v-for="p in pages" :key="p.path" :to="p.path">{{ p.name }}</nuxt-link>
     </div>
     <nuxt />
   </div>
 </template>
 
 <script>
+const pages = [
+  { name: 'Home', path: '/' },
+  { name: 'Experience', path: '/experience' },
+  { name: 'Projects', path: '/projects' },
+  { name: 'Contact', path: '/contact' }
+]
+
 export default {
-  mounted() {
-    console.log(this.$nuxt.$route.name)
+  data() {
+    return {
+      pages
+    }
+  },
+  methods: {
+    swipeHandler(direction) {
+      if (direction !== 'left' && direction !== 'right') return
+
+      let index = pages.map(p => p.path).indexOf(this.$nuxt.$route.path) + (direction === 'left' ? 1 : -1)
+
+      if (index < 0) index = 0
+      else if (index >= pages.length) index = pages.length - 1
+
+      this.$router.push(pages[index].path)
+    }
   }
 }
 </script>
