@@ -1,0 +1,19 @@
+{% if include.description == nil %}
+  <span class="-nodescription"></span>
+{% elsif include.type == "subrole" %}
+  <span class="-nodescription"></span>
+{% endif %}
+<article class="resumeitem">
+  {% unless include.employer == nil %}
+    <div class="resumeitem__heading">
+      {{ include.employer }}
+    </div>
+  {% endunless %}
+
+  <div  class="resumeitem__date">
+    {{ include.date }} <span class="resumeitem__role">{{ include.role }}</span>
+  </div>
+  <p>
+    {{ include.description }}
+  </p>
+</article>

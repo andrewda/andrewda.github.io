@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+          {% if page.title == nil %}
+            {{ site.title }}
+          {% else %}
+            {{ page.title }}
+          {% endif %}
+    </title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <section class="main">
+      <section class="top">
+        {% include titlebar.html loc=page.permalink %}
+
+        {{ content }}
+      </section>
+
+      {% include footer.html %}
+    </section>
+  </body>
+</html>

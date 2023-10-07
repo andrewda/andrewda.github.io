@@ -1,0 +1,101 @@
+---
+title: About
+layout: default
+---
+
+<div class="container -spaced -alternate2">
+  <div class="recipe__title">
+    <h1>Hello</h1>
+    <p class="lede">
+      My name is Andrew Dassonville, I'm a software developer in Oregon.
+    </p>
+    <p>
+      I'm also a photographer, pilot, robotics engineer, baker, and a variety of other things.
+    </p>
+  </div>
+  <div></div>
+</div>
+
+<div class="container recipe">
+  <div class="">
+  </div>
+  <div class="recipe__title">
+    <h2>Work</h2>
+
+    {% include resumeitem.html
+      date = "Jun 2021&mdash;Present&nbsp;"
+      role = "Founder"
+      employer = "<a href='#'>Simple Stratus</a>"
+      type = "subrole"
+      description = "<ul>
+        <li>Built and maintained secure enterprise software for clients, including web and mobile applications</li>
+        <li>Managed project scheduling and introduced agile software development practices</li>
+        <li>Coordinated with and managed teams of engineers, including front- and back-end developers, QA testers and security researchers</li>
+        <li>Used tools including AWS, Docker, Kubernetes, Node.js and React.js</li>
+      </ul>"
+    %}
+    {% include resumeitem.html
+      date = "Jun 2023&mdash;Sep 2023"
+      role = "Remote Piloting & Displays Intern"
+      employer = "<a href='https://reliable.co'>Reliable Robotics</a>"
+      description = "<ul>
+        <li>Developed software for remotely piloting aircraft</li>
+        <li>Designed user interfaces for pilots and ground crew</li>
+      </ul>"
+    %}
+    {% include resumeitem.html
+      date = "Oct 2019&mdash;Sep 2021&nbsp;"
+      role = "Systems Engineer"
+      employer = "<a href='https://osuosl.org/'>OSU Open Source Lab</a>"
+      description = "<ul>
+        <li>Gained experience with DevOps, server management, networking and data-center organization</li>
+        <li>Configured websites and servers for over 100 Open Source projects</li>
+        <li>Installed and debugged physical servers in a production data-center</li>
+        <li>Used tools including Chef, Kitchen, Terraform, Docker and Git</li>
+      </ul>"
+    %}
+    {% include resumeitem.html
+      date = "Jun 2019&mdash;Dec 2020"
+      role = "Software Engineering Intern"
+      employer = "<a href='https://www.jpl.nasa.gov/'>NASA Jet Propulsion Laboratory</a>"
+      description = "<ul>
+        <li>Created simulations for the Curiosity (Mars Science Laboratory) and Perseverance (Mars 2020) rovers</li>
+        <li>Built a web application capable of receiving operator commands, outputting 3D visualizations and listing simulated events/warnings</li>
+        <li>Constructed an API to allow external applications to access simulation utilities</li>
+        <li>Worked primarily in C/C++, Python and React.js, and used tools such as Git, Docker and AWS</li>
+      </ul>"
+    %}
+    {% include resumeitem.html
+      date = "Jul 2018&mdash;Jun 2019"
+      role = "Software Developer"
+      employer = "<a href='https://twentyideas.com/'>Twenty Ideas</a>"
+      description = "<ul>
+        <li>Contributed to numerous internal projects, including experimenting with and integrating new machine learning technologies into existing products</li>
+        <li>Gave presentations and periodic updates on project statuses to company leadership</li>
+        <li>Gained experience in front- and back-end web technologies, such as Kotlin, Go, React.js and Vue</li>
+      </ul>"
+    %}
+  </div>
+</div>
+<div class="container recipe">
+  <div class=" ">
+
+  </div>
+  <div class="recipe__title">
+    <h2>Education</h2>
+
+    {% include resumeitem.html
+      date = "2023&mdash;2025"
+      role = "Master of Science in Robotics"
+      employer = "<a href='https://oregonstate.edu'>Oregon State University</a>"
+      description = "Corvallis, Oregon"
+    %}
+
+    {% include resumeitem.html
+      date = "2019&mdash;2023"
+      role = "Bachelor of Computer Science&mdash;Robotics Focus"
+      employer = "<a href='https://oregonstate.edu'>Oregon State University</a>"
+      description = "Corvallis, Oregon"
+    %}
+  </div>
+</div>
